@@ -20,11 +20,13 @@ Running the Tests
 Notes
 -----
 
-Rather than just doing the assignment in Python, as probably would have been easiest for me, I decided to use this as an opportunity to learn something and have a more detailed go with Postman and Newman.
+I decided to use this assignment as an opportunity to learn something, and have a go with Postman Collections and Newman.
 
 The test cases are all contained within the data.csv file; the columns ‘status’ and ‘response’ represent the expected values.
 
-At the moment I don’t think it’s very obvious how to match assertion errors in the command line output to the equivalent test cases in the data file, so would definitely want to improve on that.
+Please see bugs.doc for a list of all the issues I found.
+
+At the moment I don’t think it’s very obvious how to match assertion errors in the command line output to the equivalent test cases in the data file, so would definitely want to improve on that (sorry).
 
 Hopefully you don’t have any trouble running the tests, but just in case I’ve included a quick video, airwallex.gif (can open in a browser).
 
