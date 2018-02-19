@@ -1,0 +1,75 @@
+{
+	"info": {
+		"name": "Airwallex",
+		"_postman_id": "ff873ca1-30e1-8313-d8d5-39ebd7a5cda7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Airwallex",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "06552b73-5662-48c1-9509-b904f85bb5d4",
+						"type": "text/javascript",
+						"exec": [
+							"// example using pm.response.to.have",
+							"pm.test(\"Status code as expected\", function () {",
+							"    pm.response.to.have.status(data.status);",
+							"});",
+							"",
+							"pm.test(\"Body matches expected response\", function () {",
+							"    pm.expect(pm.response.text()).to.include(data.response);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"payment_method\":{{payment_method}},\"bank_country_code\":{{bank_country_code}},\"account_name\":{{account_name}},\"account_number\":{{account_number}},\"swift_code\":{{swift_code}},\"bsb\":{{bsb}},\"aba\":{{aba}}}"
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				},
+				"description": "QA test for Airwallex"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "0321da37-14e9-4063-acce-b5e7f2e29850",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "24b18e04-d6ad-4894-ac63-0c48dc6bb4cb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
